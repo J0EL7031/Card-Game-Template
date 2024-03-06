@@ -376,6 +376,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ai_deck: []
   player_hand: []
   ai_hand: []

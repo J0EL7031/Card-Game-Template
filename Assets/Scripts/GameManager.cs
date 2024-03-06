@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
     public List<Card> deck = new List<Card>();
-    public List<Card> player_deck = new List<Card>();
-    public List<Card> ai_deck = new List<Card>();
+    //public List<Card> player_deck = new List<Card>();
+    //public List<Card> ai_deck = new List<Card>();
     public List<Card> player_hand = new List<Card>();
     public List<Card> ai_hand = new List<Card>();
     public List<Card> discard_pile = new List<Card>();
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Deal();
     }
 
     // Update is called once per frame
@@ -39,17 +39,19 @@ public class GameManager : MonoBehaviour
     void Deal()
     {
 
+        Shuffle();
     }
 
     void Shuffle()
     {
-
+        
     }
 
     void AI_Turn()
     {
 
     }
+    
 
 
 

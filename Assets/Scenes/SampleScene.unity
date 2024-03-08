@@ -201,6 +201,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4002591297304670402}
     m_Modifications:
+    - target: {fileID: 442761740662631701, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_text
+      value: Cost
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014343434640192431, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338910328714115163, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009727811974699884, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_text
+      value: Hp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274790605465817790, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765396616364707702, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_text
+      value: Damage
+      objectReference: {fileID: 0}
     - target: {fileID: 8031324947387334707, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1276

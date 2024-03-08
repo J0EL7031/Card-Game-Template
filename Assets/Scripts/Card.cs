@@ -10,8 +10,8 @@ public class Card : MonoBehaviour
 
     public string card_name;
     public string description;
-    public int health;
     public int cost;
+    public int health;
     public int damage;
     public Sprite sprite;
     public TextMeshProUGUI nameText;

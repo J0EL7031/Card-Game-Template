@@ -10,6 +10,8 @@ public class Deckdeal : MonoBehaviour
     public int grey;
     public int black;
     public int deck;
+
+    public int draw;
     
     // Start is called before the first frame update
     void Start()
@@ -27,5 +29,18 @@ public class Deckdeal : MonoBehaviour
     void Update()
     {
         deck = red + blue + green + grey + black;
+        
+        
     }
+
+
+    void OnMouseDown()
+    {
+        draw = Random.Range(1, 5);
+        
+        
+    }
+    
+    
+    
 }

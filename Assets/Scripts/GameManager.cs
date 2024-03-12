@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Deal();
+        Pp1();
     }
 
     // Update is called once per frame
@@ -36,10 +36,22 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void Deal()
+    void Pp1()
     {
 
-        Shuffle();
+        Pp2();
+    }
+    
+    void Pp2()
+    {
+
+        Ppa();
+    }
+    
+    void Ppa()
+    {
+
+        Ap1();
     }
 
     void Shuffle()
@@ -47,9 +59,22 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void AI_Turn()
+    void Ap1()
     {
 
+        Ap2();
+    }
+    
+    void Ap2()
+    {
+
+        Apa();
+    }
+    
+    void Apa()
+    {
+
+        ;
     }
     
 

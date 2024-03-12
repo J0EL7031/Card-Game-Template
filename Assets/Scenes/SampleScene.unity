@@ -144,6 +144,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 384
       objectReference: {fileID: 0}
+    - target: {fileID: 1126644538999475434, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fbc02f8ceaa4724a9dabe4a9029ac5, type: 2}
     - target: {fileID: 1338910328714115163, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 6
@@ -452,6 +456,8 @@ MonoBehaviour:
   player_hand: []
   ai_hand: []
   discard_pile: []
+  pPoints: 0
+  aiPoints: 0
 --- !u!4 &622756966
 Transform:
   m_ObjectHideFlags: 0
@@ -486,7 +492,7 @@ PrefabInstance:
     - target: {fileID: 1126644538999475434, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: 7d900983361d04a8a89148a89c115ea2, type: 2}
+      objectReference: {fileID: 11400000, guid: 1a707ad64d78048db965d32e476b042d, type: 2}
     - target: {fileID: 1338910328714115163, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 6
@@ -576,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 1126644538999475434, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: e3190c74d129a4a268f4ac037ca3a1b5, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f241b091ecd24110926bc5a8241ceb8, type: 2}
     - target: {fileID: 1338910328714115163, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 6

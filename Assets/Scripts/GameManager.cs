@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
     void Pp1()
     {
         pPoints = +1;
+        
+        //player_hand + Random.Range()
 
         Pp2();
     }

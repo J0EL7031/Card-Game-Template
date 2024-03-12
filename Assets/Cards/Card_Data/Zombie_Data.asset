@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card_name: Zombie
   description: Rotting already.
+  cost: 2
   health: 1
-  cost: 1
   damage: 2
   sprite: {fileID: 21300000, guid: 317f9ad76edf74dae8efa76d3f2bf9c4, type: 3}

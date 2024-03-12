@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public List<Card> ai_hand = new List<Card>();
     public List<Card> discard_pile = new List<Card>();
 
+    public int pPoints;
+    public int aiPoints;
+
     private void Awake()
     {
         if (gm != null && gm != this)
@@ -27,6 +30,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pPoints = 0;
+        aiPoints = 0;
+        
         Pp1();
     }
 
@@ -38,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     void Pp1()
     {
+        pPoints = +1;
 
         Pp2();
     }

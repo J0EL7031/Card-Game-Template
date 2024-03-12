@@ -38,6 +38,11 @@ public class Deckdeal : MonoBehaviour
     {
         draw = Random.Range(1, 5);
         
+        if(draw == 1)
+        {
+            
+        }
+        
         
     }
     

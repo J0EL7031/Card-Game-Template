@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
         
         //player_hand + Random.Range()
 
+        
+
         Pp2();
     }
     

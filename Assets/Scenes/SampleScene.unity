@@ -206,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
-      value: Orc
+      value: Magmamite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -453,7 +453,17 @@ MonoBehaviour:
   - {fileID: 555507651}
   - {fileID: 1684996116}
   - {fileID: 1987414441}
-  player_hand: []
+  player_hand:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ai_hand: []
   discard_pile: []
   pPoints: 0
@@ -551,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
-      value: Zombie
+      value: Puddly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -641,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
-      value: Zombie (1)
+      value: Dant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

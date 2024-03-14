@@ -204,6 +204,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 11489406e3a0540f2a7ec2d4e9c78861, type: 3}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
       value: Magmamite
@@ -507,6 +527,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1426192138825388414, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426192138825388414, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2009727811974699884, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_text
       value: Hp
@@ -559,6 +587,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3d9bb48fa3464860bf3e62f014dce95, type: 3}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
       value: Puddly
@@ -596,6 +628,14 @@ PrefabInstance:
     - target: {fileID: 1338910328714115163, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426192138825388414, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426192138825388414, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2009727811974699884, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_text
@@ -649,6 +689,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8316518541487453502, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2281ae89b44254d3b984ef85c9bb060e, type: 3}
     - target: {fileID: 8449818770812260395, guid: 17e906621820045c3ab6aae59feeace5, type: 3}
       propertyPath: m_Name
       value: Dant

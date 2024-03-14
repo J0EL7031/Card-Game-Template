@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
         
          
-        Deal(1);
+        Deal(4);
     }
      void Deal(int handSize)
      {

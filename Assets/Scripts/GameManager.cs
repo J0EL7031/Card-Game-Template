@@ -32,28 +32,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Deal(4);
+        
         pPoints = 0;
         aiPoints = 0;
         
         Pp1();
     }
 
-    void Deal(int handSize)
-    {
-        for (int i = 0; i < handSize; i++)
-        {
-            int cardNumber = Random.Range(0, deck.Count);
-            Card card = Instantiate(deck[cardNumber], new Vector3(0 + offset, 200, 0),
-                Quaternion.identity);
-            player_hand.Add(card);
-            card.transform.SetParent(_canvas);
-            deck.RemoveAt(cardNumber);
-            offset += 300;
-
-            
-        }
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -68,10 +54,23 @@ public class GameManager : MonoBehaviour
         //player_hand + Random.Range()
 
         
-
-        Pp2();
+         
+        Deal(1);
     }
+     void Deal(int handSize)
+     {
+            for (int i = 0; i < handSize; i++)
+            {
+                int cardNumber = Random.Range(0, deck.Count);
+                Card card = Instantiate(deck[cardNumber], new Vector3(0 + offset, 200, 0),
+                    Quaternion.identity);
+                player_hand.Add(card);
+                card.transform.SetParent(_canvas);
+                deck.RemoveAt(cardNumber);
+                offset += 100;
     
+            }
+     }
     void Pp2()
     {
 

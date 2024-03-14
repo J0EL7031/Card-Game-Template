@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
                 player_hand.Add(card);
                 card.transform.SetParent(_canvas);
                 deck.RemoveAt(cardNumber);
-                offset += 100;
+                offset += 150;
     
             }
      }

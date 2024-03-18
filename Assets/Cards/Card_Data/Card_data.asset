@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c025b4487bfbb41fca186c7d9d6e18a5, type: 3}
   m_Name: Card_data
   m_EditorClassIdentifier: 
-  card_name: 
-  description: 
+  card_name: card
+  description: card is this
   cost: 0
   health: 0
   damage: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 8101b400d67b545718d4e5ca511f5c9e, type: 3}

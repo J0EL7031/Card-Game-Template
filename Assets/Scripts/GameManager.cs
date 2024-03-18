@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -55,24 +56,29 @@ public class GameManager : MonoBehaviour
 
         
          
-        Deal(4);
+        Deal(3);
     }
-     void Deal(int handSize)
-     {
-            for (int i = 0; i < handSize; i++)
-            {
-                int cardNumber = Random.Range(0, deck.Count);
-                Card card = Instantiate(deck[cardNumber], new Vector3(0 + offset, 200, 0),
-                    Quaternion.identity);
-                player_hand.Add(card);
-                card.transform.SetParent(_canvas);
-                deck.RemoveAt(cardNumber);
-                offset += 150;
-    
-            }
-     }
+
+    void Deal(int handSize)
+    {
+        for (int i = 0; i < handSize; i++)
+        {
+            int cardNumber = Random.Range(0, deck.Count);
+            Card card = Instantiate(deck[cardNumber], new Vector3(0 + offset, 200, 0),
+                Quaternion.identity);
+            player_hand.Add(card);
+            card.transform.SetParent(_canvas);
+            deck.RemoveAt(cardNumber);
+            offset += 150;
+
+        }
+        
+        Pp2();
+    }
+
     void Pp2()
     {
+        
 
         Ppa();
     }

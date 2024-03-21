@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     void Pp1()
     {
-        pPoints = +1;
+        //pPoints = +1;
         
         //player_hand + Random.Range()
 
@@ -73,7 +73,23 @@ public class GameManager : MonoBehaviour
 
         }
         
-        Pp2();
+        for (int i = 0; i < handSize; i++)
+        {
+            int cardNumber = Random.Range(0, deck.Count);
+            Card card = deck[cardNumber];
+            //new Vector3(0 + offset, 500, -5),Quaternion.identity;
+            
+            ai_hand.Add(card);
+           // card.transform.SetParent(_canvas);
+            deck.RemoveAt(cardNumber);
+            //offset += 150;
+            
+            //card.GetComponent<Renderer>().enabled = true;
+            //card.sprite = null;
+
+        }
+        
+        //Pp2();
     }
 
     void Pp2()

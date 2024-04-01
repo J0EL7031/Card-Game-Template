@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public int pPoints;
     public int aiPoints;
+
+    public string cardTag;
     //public int handSize;
     public float offset;
     public Transform _canvas;

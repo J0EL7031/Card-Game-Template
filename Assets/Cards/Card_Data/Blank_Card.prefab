@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa534983bed543169ce438dfad802a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 1a707ad64d78048db965d32e476b042d, type: 2}
   card_name: 
   description: 
   cost: 0

@@ -254,11 +254,15 @@ MonoBehaviour:
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
+  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
+  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
+  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
   player_hand: []
   ai_hand: []
   discard_pile: []
   pPoints: 0
   aiPoints: 0
+  cardTag: 
   offset: 0
   _canvas: {fileID: 4002591297304670402}
 --- !u!4 &622756966

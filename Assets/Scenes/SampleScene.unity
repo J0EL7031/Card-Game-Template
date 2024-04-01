@@ -259,9 +259,6 @@ MonoBehaviour:
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
-  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
-  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
-  - {fileID: 4608709814338197990, guid: 5bccd28dd16674ec7aff5a883bd51b13, type: 3}
   player_hand: []
   ai_hand: []
   discard_pile: []
@@ -493,6 +490,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4608709814338197990, guid: 99ef4bccd68e84d9ba6e7c8051daf70b, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a707ad64d78048db965d32e476b042d, type: 2}
     - target: {fileID: 4719594797748916828, guid: 99ef4bccd68e84d9ba6e7c8051daf70b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -25.138672

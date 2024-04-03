@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Card : MonoBehaviour
+public class Card : MonoBehaviour, IPointerClickHandler
 {
     public Card_data data;
 
@@ -47,5 +48,11 @@ public class Card : MonoBehaviour
                 damageText.text = damage.ToString();
                 spriteImage.sprite = sprite;
                 
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    
+    {
+        Debug.Log("Card Clicked: " + data);
     }
 }

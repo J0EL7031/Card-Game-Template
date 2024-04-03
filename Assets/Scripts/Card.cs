@@ -22,6 +22,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public TextMeshProUGUI damageText;
     public Image spriteImage;
     public int click;
+    public int playerCard;
         
 
     // Start is called before the first frame update
@@ -54,5 +55,6 @@ public class Card : MonoBehaviour, IPointerClickHandler
     
     {
         Debug.Log("Card Clicked: " + data);
+        click = playerCard;
     }
 }

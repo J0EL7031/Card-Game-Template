@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public Card cardC;
     public static GameManager gm;
     public List<Card> deck = new List<Card>();
     //public List<Card> player_deck = new List<Card>();
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     //public int handSize;
     public float offset;
     public Transform _canvas;
+    public int em;
     private void Awake()
     {
         if (gm != null && gm != this)
@@ -40,6 +42,9 @@ public class GameManager : MonoBehaviour
         aiPoints = 0;
         
         Pp1();
+       
+        
+        //cardC.em;
     }
 
    
@@ -92,6 +97,28 @@ public class GameManager : MonoBehaviour
         }
         
         //Pp2();
+       // if (cardC = 0)
+        {
+            int cardNumber = Random.Range(0, deck.Count);
+            Card card = deck[cardNumber];
+            //new Vector3(0 + offset, 500, -5),Quaternion.identity;
+
+            ai_hand.Add(card);
+            // card.transform.SetParent(_canvas);
+            deck.RemoveAt(cardNumber);
+            //offset += 150;
+
+            //card.GetComponent<Renderer>().enabled = true;
+            //card.sprite = null;
+        }
+
+        Update();
+        {
+           // if (cardC.player_hand == 1)
+            {
+                
+            }
+        }
     }
 
     void Pp2()

@@ -20,7 +20,7 @@ public class Card : MonoBehaviour
     public TextMeshProUGUI costText;
     public TextMeshProUGUI damageText;
     public Image spriteImage;
-    public Button click;
+    public int click;
         
 
     // Start is called before the first frame update
@@ -39,11 +39,13 @@ public class Card : MonoBehaviour
                 cost = data.cost;
                 damage = data.damage;
                 sprite = data.sprite;
+                click = data.data;
                 nameText.text = card_name;
                 descriptionText.text = description;
                 healthText.text = health.ToString();
                 costText.text = cost.ToString();
                 damageText.text = damage.ToString();
                 spriteImage.sprite = sprite;
+                
     }
 }

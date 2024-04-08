@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 
         }
         
-        for (int i = 0; i < handSize; i++)
+        for (int i = 0; i < handSize - 1; i++)
         {
             int cardNumber = Random.Range(0, deck.Count);
             Card card = deck[cardNumber];

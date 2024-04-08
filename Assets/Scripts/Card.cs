@@ -60,11 +60,19 @@ public class Card : MonoBehaviour, IPointerClickHandler
     {
         gm.player_play.Add(gameObject.GetComponent<Card>());
         gm.player_hand.Remove(gameObject.GetComponent<Card>());
-        //remove from current list
-        //Card card = Instantiate(gm.player_hand[Card], new Vector3(0, 500, 0), Quaternion.identity); 
-       // gm.player_hand.Add(card);
-        gameObject.SetActive(false);
+        
+        
         Debug.Log(gameObject.name);
         cardN = playerCard;
+        
+        int cardNumber = Random.Range(0, gm.player_play.Count);
+        Card card = Instantiate(gm.player_play[cardNumber], new Vector3(200, 500, 0),
+            Quaternion.identity);
+        //gm.player_hand.Add(card);
+       card.transform.SetParent(gm._canvas);
+        //deck.RemoveAt(cardNumber);
+        
+        gameObject.SetActive(false);
+        
     }
 }

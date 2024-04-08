@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Card cardC;
+    public Card cardN;
+    
     public static GameManager gm;
     public List<Card> deck = new List<Card>();
     //public List<Card> player_deck = new List<Card>();
     //public List<Card> ai_deck = new List<Card>();
     public List<Card> player_hand = new List<Card>();
     public List<Card> ai_hand = new List<Card>();
+    public List<Card> player_play = new List<Card>();
+    public List<Card> ai_play = new List<Card>();
     public List<Card> discard_pile = new List<Card>();
 
     public int pPoints;
@@ -114,7 +117,7 @@ public class GameManager : MonoBehaviour
 
         Update();
         {
-           // if (cardC.player_hand == 1)
+           // if (cardN = 1)
             {
                 
             }

@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee8c48878610400591dbc552a9c8d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardN: {fileID: 0}
   deck:
   - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
   - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
@@ -256,12 +257,15 @@ MonoBehaviour:
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   player_hand: []
   ai_hand: []
+  player_play: []
+  ai_play: []
   discard_pile: []
   pPoints: 0
   aiPoints: 0
   cardTag: 
   offset: 0
   _canvas: {fileID: 4002591297304670402}
+  em: 0
 --- !u!4 &622756966
 Transform:
   m_ObjectHideFlags: 0

@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerClickHandler
 {
+    public GameManager gm;
     public Card_data data;
-
+    
     public string card_name;
     public string description;
     public int cost;
@@ -22,13 +24,15 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public TextMeshProUGUI damageText;
     public Image spriteImage;
     public int click;
+    public int cardN;
+    
     public int playerCard;
         
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = FindObjectOfType<GameManager>();
 
     }
 
@@ -48,13 +52,19 @@ public class Card : MonoBehaviour, IPointerClickHandler
                 costText.text = cost.ToString();
                 damageText.text = damage.ToString();
                 spriteImage.sprite = sprite;
-                
+                //cardN = data.cardN;
+
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    
     {
-        Debug.Log("Card Clicked: " + data);
-        click = playerCard;
+        gm.player_play.Add(gameObject.GetComponent<Card>());
+        gm.player_hand.Remove(gameObject.GetComponent<Card>());
+        //remove from current list
+        //Card card = Instantiate(gm.player_hand[Card], new Vector3(0, 500, 0), Quaternion.identity); 
+       // gm.player_hand.Add(card);
+        gameObject.SetActive(false);
+        Debug.Log(gameObject.name);
+        cardN = playerCard;
     }
 }

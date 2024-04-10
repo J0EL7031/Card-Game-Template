@@ -73,14 +73,6 @@ public class Card : MonoBehaviour, IPointerClickHandler
         //deck.RemoveAt(cardNumber);
         
         gameObject.SetActive(false);
-        
-<<<<<<< HEAD
-        
-<<<<<<< Updated upstream
-=======
-        
->>>>>>> Stashed changes
-=======
->>>>>>> e568cee18bd769020582f49feae4aa468442c77e
+  
     }
 }

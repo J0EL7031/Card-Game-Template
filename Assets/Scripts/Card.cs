@@ -74,5 +74,6 @@ public class Card : MonoBehaviour, IPointerClickHandler
         
         gameObject.SetActive(false);
         
+        
     }
 }

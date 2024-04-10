@@ -81,6 +81,6 @@ public class Card : MonoBehaviour, IPointerClickHandler
         cardC.transform.SetParent(gm._canvas);
         gm.ai_hand.RemoveAt(cardNumberC);
         //offset += 150;
-  
+        
     }
 }

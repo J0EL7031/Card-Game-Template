@@ -27,12 +27,15 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public int cardN;
     
     public int playerCard;
+
+    public int playing;
         
 
     // Start is called before the first frame update
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
+        playing = 0;
 
     }
 
@@ -58,29 +61,33 @@ public class Card : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        gm.player_play.Add(gameObject.GetComponent<Card>());
-        gm.player_hand.Remove(gameObject.GetComponent<Card>());
-        
-        
-        Debug.Log(gameObject.name);
-        cardN = playerCard;
-        
-        int cardNumber = Random.Range(0, gm.player_play.Count);
-        Card card = Instantiate(gm.player_play[cardNumber], new Vector3(200, 500, 0),
-            Quaternion.identity);
-        //gm.player_hand.Add(card);
-       card.transform.SetParent(gm._canvas);
-        //deck.RemoveAt(cardNumber);
-        
-        gameObject.SetActive(false);
-        
-        int cardNumberC = Random.Range(0, gm.ai_hand.Count);
-        Card cardC = Instantiate(gm.ai_hand[cardNumberC], new Vector3(100, 500, 0),
-            Quaternion.identity);
-        gm.ai_play.Add(cardC);
-        cardC.transform.SetParent(gm._canvas);
-        gm.ai_hand.RemoveAt(cardNumberC);
-        //offset += 150;
-        
+        if (playing == 0)
+        {
+            playing = 1;
+            
+            gm.player_play.Add(gameObject.GetComponent<Card>());
+            gm.player_hand.Remove(gameObject.GetComponent<Card>());
+
+
+            Debug.Log(gameObject.name);
+            cardN = playerCard;
+
+            int cardNumber = Random.Range(0, gm.player_play.Count);
+            Card card = Instantiate(gm.player_play[cardNumber], new Vector3(300, 500, 0),
+                Quaternion.identity);
+            //gm.player_hand.Add(card);
+            card.transform.SetParent(gm._canvas);
+            //deck.RemoveAt(cardNumber);
+
+            gameObject.SetActive(false);
+
+            int cardNumberC = Random.Range(0, gm.ai_hand.Count);
+            Card cardC = Instantiate(gm.ai_hand[cardNumberC], new Vector3(-100, 500, 0),
+                Quaternion.identity);
+            gm.ai_play.Add(cardC);
+            cardC.transform.SetParent(gm._canvas);
+            gm.ai_hand.RemoveAt(cardNumberC);
+            //offset += 150;
+        }
     }
 }

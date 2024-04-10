@@ -75,5 +75,9 @@ public class Card : MonoBehaviour, IPointerClickHandler
         gameObject.SetActive(false);
         
         
+<<<<<<< Updated upstream
+=======
+        
+>>>>>>> Stashed changes
     }
 }

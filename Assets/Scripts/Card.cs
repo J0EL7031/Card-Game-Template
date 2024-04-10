@@ -75,11 +75,11 @@ public class Card : MonoBehaviour, IPointerClickHandler
         gameObject.SetActive(false);
         
         int cardNumberC = Random.Range(0, gm.ai_hand.Count);
-        Card cardC = Instantiate(gm.ai_hand[cardNumber], new Vector3(200, 200, 0),
+        Card cardC = Instantiate(gm.ai_hand[cardNumberC], new Vector3(200, 200, 0),
             Quaternion.identity);
-        gm.ai_play.Add(card);
+        gm.ai_play.Add(cardC);
         //card.transform.SetParent(_canvas);
-        gm.ai_hand.RemoveAt(cardNumber);
+        gm.ai_hand.RemoveAt(cardNumberC);
         //offset += 150;
   
     }

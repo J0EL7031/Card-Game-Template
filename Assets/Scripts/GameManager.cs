@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public float offset;
     public Transform _canvas;
     public int em;
+
+    public bool playing;
     private void Awake()
     {
         if (gm != null && gm != this)
@@ -43,7 +45,7 @@ public class GameManager : MonoBehaviour
         
         pPoints = 0;
         aiPoints = 0;
-        
+        playing = true;
         Pp1();
        
         

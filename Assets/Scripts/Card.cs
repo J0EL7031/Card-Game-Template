@@ -28,14 +28,14 @@ public class Card : MonoBehaviour, IPointerClickHandler
     
     public int playerCard;
 
-    public int playing;
+    public bool playing;
         
 
     // Start is called before the first frame update
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        playing = 0;
+        
 
     }
 
@@ -48,7 +48,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
                 cost = data.cost;
                 damage = data.damage;
                 sprite = data.sprite;
-                click = data.data;
+                //click = data.data;
                 nameText.text = card_name;
                 descriptionText.text = description;
                 healthText.text = health.ToString();
@@ -61,9 +61,9 @@ public class Card : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (playing == 0)
+        if (gm.playing)
         {
-            playing = 1;
+            
             
             gm.player_play.Add(gameObject.GetComponent<Card>());
             gm.player_hand.Remove(gameObject.GetComponent<Card>());
@@ -88,6 +88,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
             cardC.transform.SetParent(gm._canvas);
             gm.ai_hand.RemoveAt(cardNumberC);
             //offset += 150;
+            
+            gm.playing = false;
         }
     }
 }

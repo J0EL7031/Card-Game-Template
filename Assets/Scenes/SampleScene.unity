@@ -246,15 +246,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardN: {fileID: 0}
   deck:
+  - {fileID: 8171429048393253932, guid: 045c93a6e7099457c8c3113db8b2ebc6, type: 3}
+  - {fileID: 8171429048393253932, guid: 045c93a6e7099457c8c3113db8b2ebc6, type: 3}
+  - {fileID: 8171429048393253932, guid: 045c93a6e7099457c8c3113db8b2ebc6, type: 3}
+  - {fileID: 8171429048393253932, guid: 045c93a6e7099457c8c3113db8b2ebc6, type: 3}
+  - {fileID: 8171429048393253932, guid: 045c93a6e7099457c8c3113db8b2ebc6, type: 3}
   - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
   - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
   - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
-  - {fileID: 5504985778506952848, guid: c9f26e11f733d46a8b43143a5bbce16f, type: 3}
-  - {fileID: 5504985778506952848, guid: c9f26e11f733d46a8b43143a5bbce16f, type: 3}
-  - {fileID: 5504985778506952848, guid: c9f26e11f733d46a8b43143a5bbce16f, type: 3}
+  - {fileID: 3540476449824575733, guid: 9276694fccc46416793fbd6c01cd7d03, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
   - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
-  - {fileID: 8171429048393253932, guid: 84452d8c5581248f4830db452a5025d0, type: 3}
+  - {fileID: 8171429048393253932, guid: a7320cd1969c84f119c8f7154851da01, type: 3}
   player_hand: []
   ai_hand: []
   player_play: []
@@ -266,6 +269,7 @@ MonoBehaviour:
   offset: 0
   _canvas: {fileID: 4002591297304670402}
   em: 0
+  playing: 0
 --- !u!4 &622756966
 Transform:
   m_ObjectHideFlags: 0

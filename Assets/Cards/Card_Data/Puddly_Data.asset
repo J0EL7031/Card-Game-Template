@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card_name: Puddly
   description: Goes with the flow
-  cost: 3
-  health: 3
-  damage: 1
+  cost: 2
+  health: 2
+  damage: 2
   sprite: {fileID: 21300000, guid: ba4ee193802a54a87886531db16e3a2f, type: 3}
-  data: 2

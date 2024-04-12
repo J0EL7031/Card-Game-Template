@@ -29,12 +29,34 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public int playerCard;
 
     public bool playing;
-        
+    
+    public float WP;
+
+    public int attack;
+    
+    public int CompareAttack(Card otherCard)
+    {
+        if (attack > otherCard.attack)
+        {
+            return 1; // This card has higher attack
+        }
+        else if (attack < otherCard.attack)
+        {
+            return -1; // Other card has higher attack
+        }
+        else
+        {
+            return 0; // Both cards have equal attack
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
+
+        //StartCoroutine(WaitAndPrint(3.0f));
+        
         
 
     }
@@ -90,6 +112,33 @@ public class Card : MonoBehaviour, IPointerClickHandler
             //offset += 150;
             
             gm.playing = false;
+            
+            //IEnumerator WP(float waitTime)
+            {
+            //    yield return new WaitForSeconds(waitTime);
+            //    Debug.Log("WaitAndPrint " + Time.time);
+            }
+
+            Card card1 = new Card();
+            card1.attack = 10;
+
+            Card card2 = new Card();
+            card2.attack = 8;
+
+            int comparisonResult = card1.CompareAttack(card2);
+
+            if (comparisonResult > 0)
+            {
+                Debug.Log("Card 1 has higher attack!");
+            }
+            else if (comparisonResult < 0)
+            {
+                Debug.Log("Card 2 has higher attack!");
+            }
+            else
+            {
+                Debug.Log("Both cards have equal attack!");
+            }
         }
     }
 }
